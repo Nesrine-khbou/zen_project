@@ -1,0 +1,174 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 98%;
+  position: relative;
+  margin: 1rem auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 3}
+}
+
+
+#title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem 0rem;
+}
+
+#choices ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#choices li{
+    margin-right: 3rem;
+    font-size: 0.95rem;
+    transition:color 0.2s ease-out ;
+
+}
+
+#choices li:hover{
+    color: rgb(208, 5, 5) ;
+    cursor: pointer;
+}
+
+#femme {
+    margin-top: 2rem;
+}
+
+#femme ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#femme li{
+    margin-right: 4rem;
+}
+
+#femme img{
+    width: 40rem;
+    height: 65rem;
+    object-fit:cover;
+
+}
+
+#shopping {
+    margin: 3rem 0;
+}
+
+#shopping h2{
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+#shopping h1{
+    font-size: 2.7rem;
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+}
+
+#top_produit p{
+    width: 9%;
+    position: relative;
+    font-weight: 100;
+    text-align: center;
+    font-size: 0.9rem;
+    border-bottom: 1px solid black;
+    margin:2rem auto;
+}
+
+#top_produit ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+}
+
+
+#top_produit img {
+    width: 37rem;
+    height: 45rem;
+    object-fit:cover;
+
+}
+
+#newsletter{
+    padding: 3rem 0;
+    background-color: whitesmoke;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+#newsletter hr {
+    margin-bottom: -2rem;
+}
+
+#newsletter h3{
+    width: 14%;
+    position: relative;
+    margin:1rem  auto;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#newsletter p {
+    width: 26%;
+    position: relative;
+    margin: 2rem auto;
+}
+
+#newsletter input{
+    width: 35%;
+    height: 2.5rem;
+    border-color:transparent ;
+    background-color: white;
+}
+
+#newsletter input:focus{
+    border: 3px solid black;
+}
+
+
+#newsletter ::placeholder{
+    font-size: 0.8rem;
+    color: rgb(161, 158, 158);
+    padding-left: 1rem;
+}
+
+#newsletter button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    margin: 1rem auto;
+    padding: 0.8rem 1.6rem;
+}
+
+
